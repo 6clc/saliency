@@ -1,4 +1,8 @@
 # Windows default autosave extension
+# 同步过test的数据集后关闭
+input
+ouput
+
 *.asv
 
 # OSX / *nix default autosave extension
