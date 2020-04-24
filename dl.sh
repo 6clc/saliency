@@ -4,5 +4,16 @@
 # scp -r hanshan@192.168.0.101:/home/hanshan/Data/DataCV/ScoreWriter/fixation/synthetic/dcn_layer4/2020_04_17_20_16_55/imgs/stage-0 /Volumes/data/Projects/CV-Projects/saliency/input/smaps/synthetic/dcn_layer4
 
 dir="hanshan@192.168.0.101:"
-# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/synthetic/fixation/ /Volumes/data/Projects/CV-Projects/saliency/input/bmaps/synthetic
-scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/synthetic/saliency/ /Volumes/data/Projects/CV-Projects/saliency/input/dmaps/synthetic
+name="CAT2000"
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/MIT/train/fixation/ /Volumes/data/Projects/CV-Projects/saliency/input/bmaps/MIT
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/MIT/train/saliency/ /Volumes/data/Projects/CV-Projects/saliency/input/dmaps/MIT
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/MIT/train/images/ /Volumes/data/Projects/CV-Projects/saliency/input/images/MIT
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/MIT/fixation/ /Volumes/data/Projects/CV-Projects/saliency/input/smaps/MIT
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/${name}/train/fixation/ /Volumes/data/Projects/CV-Projects/saliency/input/bmaps/${name}
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/${name}/train/saliency/ /Volumes/data/Projects/CV-Projects/saliency/input/dmaps/${name}
+# scp -r ${dir}/home/hanshan/Data/DataCV/DataSets/${name}/train/images/ /Volumes/data/Projects/CV-Projects/saliency/input/images/${name}
+
+s_dir="/home/hanshan/Data/test/MIT_VALICON"
+d_dir="/Volumes/data/Projects/CV-Projects/saliency/input/smaps/MIT"
+
+scp -r ${dir}${s_dir} ${d_dir}
